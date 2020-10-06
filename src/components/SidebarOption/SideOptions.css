@@ -1,0 +1,29 @@
+.sidebarOption {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    margin: 4px 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all ease-in-out 200ms;
+}
+
+.sidebarOption:hover {
+    background-color: var(--twitter-transparency);
+    color: var(--twitter-color);
+}
+
+.sidebarOption.active {
+    color: var(--twitter-color);
+}
+
+.sidebarOption > .MuiSvgIcon-root {
+    font-size: 1.7rem;
+}
+
+.sidebarOption > p {
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
