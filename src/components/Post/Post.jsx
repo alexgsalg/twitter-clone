@@ -1,7 +1,12 @@
 import React from "react";
 import "./Post.css";
 import { Avatar } from "@material-ui/core";
+//Icons
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
+import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
+import RepeatIcon from "@material-ui/icons/Repeat";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import PublishIcon from "@material-ui/icons/Publish";
 
 function Post({ avatar, displayname, username, verified, text, image }) {
   return (
@@ -19,6 +24,12 @@ function Post({ avatar, displayname, username, verified, text, image }) {
         ) : (
           ""
         )}
+        <div className="post__icons">
+          <ChatBubbleOutlineIcon />
+          <RepeatIcon />
+          <FavoriteBorderIcon />
+          <PublishIcon />
+        </div>
       </div>
     </div>
   );

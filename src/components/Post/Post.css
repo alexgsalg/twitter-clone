@@ -1,5 +1,5 @@
 .post {
-    padding: 10px 15px;
+    padding: 10px 15px 5px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -50,4 +50,24 @@
     height: 20vw;
     object-fit: cover;
     border-radius: 20px;
+}
+
+.post__icons {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gray-color);
+}
+
+.post__icons .MuiSvgIcon-root {
+    font-size: 2.2rem !important;
+    padding: 8px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.post__icons .MuiSvgIcon-root:hover {
+    color: var(--twitter-color);
+    background: var(--twitter-transparency);
 }
