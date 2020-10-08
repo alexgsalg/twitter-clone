@@ -1,0 +1,72 @@
+.tweetbox {
+    padding: 10px 15px;
+    border-bottom: 10px solid var(--border-divisor);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tweetbox__avatar {
+    width: 49px !important;
+    height: 49px !important;
+    margin-right: 15px;
+}
+
+.tweetbox__actions {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tweetbox__input {
+    width: 100%;
+    /* min-height: 45px; */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    font-family: inherit;
+    color: var(--light-color);
+    resize: vertical;
+}
+
+.tweetbox__input::placeholder {
+    opacity: 0.4;
+}
+
+.tweetbox__submit {
+    width: auto;
+    padding: 10px 15px;
+    background-color: var(--twitter-color);
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--light-color);
+    transition: all ease-in-out 200ms;
+}
+
+.tweetbox__submit:hover {
+    background-color: var(--twitter-hover-color);
+}
+
+.tweetbox__icons {
+    color: var(--twitter-color);
+}
+
+.tweetbox__actions .MuiSvgIcon-root {
+    padding: 5px;
+    font-size: 2.2rem;
+    border-radius: 50px;
+}
+
+.tweetbox__actions .MuiSvgIcon-root:hover {
+    background: var(--twitter-transparency);
+}
+
+.MuiSvgIcon-root.charticon {
+    transform: rotateZ(90deg);
+}

@@ -1,6 +1,9 @@
 .feed {
+    flex: 0 0 0.6;
     min-height: 100vh;
     max-width: 600px;
-    border-left: 1px solid var(--gray-color);
-    border-right: 1px solid var(--gray-color);
+    /* min-width: fit-content; */
+    /* overflow-y: scroll; */
+    border-left: 1px solid var(--border-divisor);
+    border-right: 1px solid var(--border-divisor);
 }
