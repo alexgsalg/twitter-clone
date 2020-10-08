@@ -23,7 +23,7 @@ function Post({
           <span className="post__timestamp"> · {timestamp}</span>
         </div>
         <p className="post__text">{text}</p>
-        <img src={image} className="post__thumb" />
+        <img src={image} className="post__thumb" alt={username} />
       </div>
     </div>
   );

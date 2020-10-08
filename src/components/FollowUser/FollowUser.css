@@ -1,0 +1,65 @@
+.followUser {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid var(--border-divisor);
+    cursor: pointer;
+}
+
+.followUser:hover {
+    background-color: var(--twitter-transparency);
+}
+
+.followUser__avatar {
+    width: 49px !important;
+    height: 49px !important;
+    margin-right: 15px;
+}
+
+.followUser__user {
+    flex: 1;
+}
+
+.followUser__user div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.followUser__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 3px;
+    font-size: 15px;
+}
+
+.followUser__displayname {
+    font-size: 15px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.followUser__verified {
+    display: inline-block;
+    font-size: 1rem !important;
+    margin: 0 5px 0 2px;
+}
+
+.followUser__username {
+    font-size: 15px;
+    color: var(--gray-color);
+}
+
+.followUser__button {
+    width: auto;
+    padding: 5px 15px;
+    background-color: transparent;
+    border: 1px solid var(--twitter-color);
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--twitter-color);
+    cursor: pointer;
+}

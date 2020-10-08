@@ -33,6 +33,16 @@ function Feed() {
         text="Juiz homologou estratégia da empresa e rejeitou pedidos de adiamento de bancos; saiba mais! #tecmundo"
         image="https://pbs.twimg.com/media/EjumIJNXsAAZhCq?format=jpg&name=small"
       />
+
+      <Post
+        avatar="https://pbs.twimg.com/profile_images/1311757881734295553/ejB79Dxu_400x400.jpg"
+        displayname="TecMundo"
+        verified
+        timestamp="12h"
+        username="@Tec_Mundo"
+        text="Juiz homologou estratégia da empresa e rejeitou pedidos de adiamento de bancos; saiba mais! #tecmundo"
+        image="https://pbs.twimg.com/media/EjumIJNXsAAZhCq?format=jpg&name=small"
+      />
     </div>
   );
 }

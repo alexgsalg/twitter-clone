@@ -21,6 +21,10 @@
     gap: 15px;
 }
 
+.tweetbox__actions svg {
+    cursor: pointer;
+}
+
 .tweetbox__input {
     width: 100%;
     /* min-height: 45px; */
@@ -46,6 +50,7 @@
     font-size: 15px;
     font-weight: 600;
     color: var(--light-color);
+    cursor: pointer;
     transition: all ease-in-out 200ms;
 }
 
