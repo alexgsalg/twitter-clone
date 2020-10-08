@@ -1,8 +1,17 @@
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.22.1/firebase-app.js"></script>
+import firebase from "firebase";
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+const firebaseConfig = {
+  apiKey: "AIzaSyA71T3Ts3C9e2fSO9NwGP3pi4qOPdGIO-U",
+  authDomain: "twitter-clone-fde87.firebaseapp.com",
+  databaseURL: "https://twitter-clone-fde87.firebaseio.com",
+  projectId: "twitter-clone-fde87",
+  storageBucket: "twitter-clone-fde87.appspot.com",
+  messagingSenderId: "557636005692",
+  appId: "1:557636005692:web:67b9197d3a98a2f54e7839",
+};
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+const db = firebaseApp.firestore();
+
+export default db;

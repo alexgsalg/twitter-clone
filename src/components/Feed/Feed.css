@@ -4,6 +4,9 @@
     max-width: 600px;
     /* min-width: fit-content; */
     /* overflow-y: scroll; */
-    border-left: 1px solid var(--border-divisor);
-    border-right: 1px solid var(--border-divisor);
+}
+
+.feed__timeline {
+    display: flex;
+    flex-direction: column-reverse;
 }

@@ -4,6 +4,7 @@
     flex: 0 1 350px;
     height: 100vh;
     padding: 10px;
+    border-left: 1px solid var(--border-divisor);
 }
 
 .widgets__search {

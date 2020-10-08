@@ -1,48 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Feed.css";
 import TweetBox from "../TweetBox/TweetBox";
 import Post from "../Post/Post";
+import db from "../../Firebase";
 
 function Feed() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    db.collection("posts").onSnapshot((snapshot) =>
+      setPosts(snapshot.docs.map((doc) => doc.data()))
+    );
+  }, []);
   return (
     <div className="feed">
       <div className="section-header">
         <h2>Home</h2>
       </div>
 
-      {/* TweetBox */}
       <TweetBox />
 
-      {/* Tweet */}
-      <Post
-        avatar="https://pbs.twimg.com/profile_images/1311757881734295553/ejB79Dxu_400x400.jpg"
-        displayname="TecMundo"
-        verified
-        timestamp="12h"
-        username="@Tec_Mundo"
-        text="Juiz homologou estratégia da empresa e rejeitou pedidos de adiamento de bancos; saiba mais! #tecmundo"
-        image="https://pbs.twimg.com/media/EjumIJNXsAAZhCq?format=jpg&name=small"
-      />
-
-      <Post
-        avatar="https://pbs.twimg.com/profile_images/1311757881734295553/ejB79Dxu_400x400.jpg"
-        displayname="TecMundo"
-        verified
-        timestamp="12h"
-        username="@Tec_Mundo"
-        text="Juiz homologou estratégia da empresa e rejeitou pedidos de adiamento de bancos; saiba mais! #tecmundo"
-        image="https://pbs.twimg.com/media/EjumIJNXsAAZhCq?format=jpg&name=small"
-      />
-
-      <Post
-        avatar="https://pbs.twimg.com/profile_images/1311757881734295553/ejB79Dxu_400x400.jpg"
-        displayname="TecMundo"
-        verified
-        timestamp="12h"
-        username="@Tec_Mundo"
-        text="Juiz homologou estratégia da empresa e rejeitou pedidos de adiamento de bancos; saiba mais! #tecmundo"
-        image="https://pbs.twimg.com/media/EjumIJNXsAAZhCq?format=jpg&name=small"
-      />
+      <div className="feed__timeline">
+        {posts.map((post) => (
+          <Post
+            key={post.text}
+            avatar={post.avatar}
+            displayname={post.displayname}
+            verified={post.verified}
+            username={post.username}
+            text={post.text}
+            image={post.image}
+          />
+        ))}
+      </div>
     </div>
   );
 }
